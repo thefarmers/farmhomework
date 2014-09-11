@@ -1,0 +1,5 @@
+To read a binary data file (e.g. ecg.dat) from within MATLAB, you can use the provided program rdsign212 (download ‘rdsign212.m’ and ‘rdsign212.dll’ from homepage). Copy these two files into your MATLAB working directory. To read the first 10000 samples of a 2-lead ECG (file ecg.dat) and assign the data to a variable ecg, type the following in the MATLAB command window:
+
+ecg = rdsign212('ecg.dat',2,1,1000)
+
+You can get the syntax for the command rdsign212 by typing ‘help rdsign212’.
